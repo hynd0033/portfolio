@@ -51,7 +51,28 @@ table {
 
 /* --- GENERAL STYLES --- */
 
+h1 {
+	font-size: 22px;
+}
+
+.nav-flex {
+	background-color: #EBAB43;
+}
+
 /* --- MOBILE STYLES --- */
+
+.nav-lines {
+	font-size: 32px;
+}
+
+.nav-words {
+   display: none;
+}
+
+.banner {
+	width: 100%;
+}
+
 
 .logo {
     width: 46px;
@@ -60,8 +81,8 @@ table {
 .container { 
     width: 393px;
     margin: 0 auto;
-    background-color: aqua;
-    text-align: center;
+    background-color: #FF9C77;
+	padding: 0;
 }
 
 @media screen and (min-width: 834px) {
