@@ -64,15 +64,21 @@ h1 {
 }
 
 h2 {
-	font-size: 42px;
+	font-size: 32px;
 	text-align: center;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-weight: bold;
 }
 
+h3 {
+	font-size: 24px;
+	text-align: center;
+}
+
 p {
 	font-size: 20px;
 	font-family: 'Inter', sans-serif;
+	text-align: center;
 }
 
 .nav-flex {
@@ -80,6 +86,8 @@ p {
 }
 
 /* --- MOBILE STYLES --- */
+
+/* --- NAVIGATION ---*/
 
 .container { 
     width: 393px;
@@ -99,6 +107,12 @@ p {
 
 .nav-words {
    display: none;
+}
+
+/* --- HOME PAGE --- */
+
+#name {
+	font-size: 42px;
 }
 
 .banner {
@@ -130,6 +144,103 @@ p {
 	margin-left: 10px;
 }
 
+/* --- ABOUT US --- */
+
+.image-crop {
+	border-radius: 50%;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+}
+
+/* --- I used https://cssgradient.io/ to get this gradient code --- */
+
+.resume-btn, .submit-btn {
+	font-size: 20px;
+	font-family: 'Inter', sans-serif;
+	padding: 12px;
+	background: rgb(245,200,41);
+	background: radial-gradient(circle, rgba(245,200,41,1) 0%, rgba(245,200,41,1) 33%, rgba(227,102,47,1) 75%);
+	color: white;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #707070;
+	border-radius: 14px;
+}
+
+.hobbies .container {
+	background-color: #231F20;
+	color: #FF9C77
+}
+
+.hobby-img {
+	border-style: solid;
+	border-width: 16px;
+	border-color: #FF9C77;
+}
+
+/* --- CONTACT PAGE --- */
+
+.contact-logo {
+	width: 46px;
+	display: block;
+	margin: 0 auto;
+}
+
+.phone {
+	display: none;
+}
+
+.rates .container {
+	background-color: #231F20;
+	color: #FF9C77
+}
+
+#message {
+	width: 362px;
+	height: 189px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+	resize: none;
+}
+
+
+.submit-btn {
+	width: 160px;
+}
+
+/* --- PROJECTS PAGE --- */
+
+.folder-list img {
+	display: none;
+}
+
+.academic .container {
+	background-color: #FF9C77;
+	padding-top: 48px;
+	padding-bottom: 74px;
+	line-height: 35px;
+}
+
+.work .container {
+	background-color: #EBAB43;
+	padding-top: 82px;
+	padding-bottom: 82px;
+	line-height: 35px;
+}
+
+.personal .container {
+	background-color: #FF9C77;
+	padding-top: 82px;
+	padding-bottom: 82px;
+	line-height: 35px;
+}
+
+:root  {
+	--bs-primary: #EBAB43;
+	--bs-primary-rgb: 235, 171, 67;
+  }
 
 
 /*
