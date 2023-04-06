@@ -68,6 +68,7 @@ h2 {
 	text-align: center;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	font-weight: bold;
+	text-align: center;
 }
 
 h3 {
@@ -151,6 +152,12 @@ p {
 	border-style: solid;
 	border-color: black;
 	border-width: 2px;
+	display: block;
+	margin: 0 auto;
+}
+
+.resume {
+	display: none;
 }
 
 /* --- I used https://cssgradient.io/ to get this gradient code --- */
@@ -166,6 +173,8 @@ p {
 	border-style: solid;
 	border-color: #707070;
 	border-radius: 14px;
+	display: block;
+	margin: 0 auto;
 }
 
 .hobbies .container {
@@ -177,6 +186,10 @@ p {
 	border-style: solid;
 	border-width: 16px;
 	border-color: #FF9C77;
+}
+
+.dog, .game {
+	display: none;
 }
 
 /* --- CONTACT PAGE --- */
@@ -193,7 +206,11 @@ p {
 
 .rates .container {
 	background-color: #231F20;
-	color: #FF9C77
+	color: #FF9C77;
+}
+
+.rate-message {
+	line-height: 28px;
 }
 
 #message {
@@ -208,6 +225,8 @@ p {
 
 .submit-btn {
 	width: 160px;
+	margin-left: 220px;
+	margin-bottom: 84px;
 }
 
 /* --- PROJECTS PAGE --- */
@@ -243,15 +262,57 @@ p {
   }
 
 
-/*
+
 @media screen and (min-width: 834px) {
-	.invisible {
-		visibility: visible !important;
-	  }
-	  
+
+	.container {
+		width: 834px;
+	}
+
+	/* --- HOME PAGE --- */
+
+	.social i {
+		margin-bottom: 45px;
+	}
+
+	/* --- ABOUT PAGE --- */
+
+	.resume {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.dog, .game {
+		display: block;
+	}
+
+	/* --- CONTACT PAGE --- */
+
+	#message {
+		width: 594px;
+	}
+
+	.input {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin-right: 20px;
+	}
+
+	.submit-btn {
+		margin-right: 200px;
+	}
+
+
 }
 
 @media screen and (min-width: 1366px) {
     
 }
-*/
+
+
+/*
+.invisible {
+	visibility: visible !important;
+  }
+  */
