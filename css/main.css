@@ -90,6 +90,27 @@ p {
 
 /* --- NAVIGATION ---*/
 
+.skip {
+	width: 70%;
+	position: absolute;
+	background-color: red;
+	color: black;
+	top: -4em;
+  }
+  
+  .skip a:focus {
+	top: 4em;
+	position: relative;
+	background-color: greenyellow;
+	color: black;
+	width: 70%;
+  }
+
+.navbar {
+	margin:0;
+	padding:0;
+}
+
 .container { 
     width: 393px;
     margin: 0 auto;
@@ -204,6 +225,7 @@ p {
 	display: none;
 }
 
+
 .rates .container {
 	background-color: #231F20;
 	color: #FF9C77;
@@ -236,21 +258,18 @@ p {
 }
 
 .academic .container {
-	background-color: #FF9C77;
 	padding-top: 48px;
 	padding-bottom: 74px;
 	line-height: 35px;
 }
 
 .work .container {
-	background-color: #EBAB43;
 	padding-top: 82px;
 	padding-bottom: 82px;
 	line-height: 35px;
 }
 
 .personal .container {
-	background-color: #FF9C77;
 	padding-top: 82px;
 	padding-bottom: 82px;
 	line-height: 35px;
@@ -259,14 +278,23 @@ p {
 :root  {
 	--bs-primary: #EBAB43;
 	--bs-primary-rgb: 235, 171, 67;
+	--bs-secondary: #FF9C77;
+	--bs-secondary-rgb: 255, 156, 119;
+	
   }
-
-
 
 @media screen and (min-width: 834px) {
 
 	.container {
 		width: 834px;
+	}
+
+	h1 {
+		margin-right: 22px;
+	}
+
+	.nav-lines {
+		display: block;
 	}
 
 	/* --- HOME PAGE --- */
@@ -286,7 +314,15 @@ p {
 		display: block;
 	}
 
+	.fa-arrow-left, .fa-arrow-right {
+		opacity: 0;
+	}
+
 	/* --- CONTACT PAGE --- */
+
+	.phone {
+		display: block;
+	}
 
 	#message {
 		width: 594px;
@@ -306,8 +342,24 @@ p {
 
 }
 
+@media screen and (min-width: 1200px) {
+    
+	.nav-lines {
+		display: none;
+	}
+
+}
+
 @media screen and (min-width: 1366px) {
     
+	.container {
+		width: 1366px;
+	}
+
+	.nav-lines {
+		display: none;
+	}
+
 }
 
 

@@ -16,40 +16,56 @@
 <body>
     
     <!-- Navigation -->
-    <!-- Navigation -->
-    <header>
-        <div class="container">
-            <ul class="nav-flex">
-                <div class="row">
-                <div class="mt-1 col-2">
-                <li class="logo"><img class="logo" src="images/logo_desktop.png" alt="website logo"></li>
+    
+    <div class="skip">
+        <a href="#skip-main">Skip to Content</a>
+        <a href="#skip-nav">Return to Top</a>
+      </div>
+  
+      <header role="banner">
+          <div class="container d-flex justify-content-around bg-primary">
+              <nav class="navbar navbar-expand-xl bg-body-tertiary">
+                  <div class="container-fluid">
+                    <img src="images/logo_desktop.png" class="navbar-brand logo" href="index.html">
+                    <h1 class="p-1" role="heading" id="skip-nav">Conner's Web Creation</h1>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item p-1">
+                          <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item p-1">
+                          <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item p-1">
+                          <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item p-1">
+                          <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="nav-lines"><i class="fa-solid fa-bars" style="color: #000000;"></i></div>
+                  </div>
+                </nav>
                 </div>
-                <div class="mt-3 col-8">
-                <li><h1 role="heading" id="skip-nav">Conner's Web Creation</h1></li>
-                </div>
-                <div class="mt-2 col-2">
-                <li class="nav-lines"><i class="fa-solid fa-bars" style="color: #000000;"></i></li>        
-                <li class="nav-words"><a href="index.html">Home</a></li>
-                <li class="nav-words"><a href="about.html">About Us</a></li>
-                <li class="nav-words"><a href="contact.html">Contact</a></li>
-                <li class="nav-words"><a href="projects.html">Projects</a></li>
-                </div>
-            </div>
-            </ul>
-        </div>
-    </header>
-
-    <main>
+      </header>
 
         <!-- Intro/Resume Section -->
         <div class="container">
-            <img class="image-crop" src="images/profile-pic-111_x_111.png" alt="conner profile">
+            <picture>
+                <source srcset="images/profile-pic-160_x_160.png"
+                media="(min-width: 834px)">
+    
+                <img class="image-crop" src="images/profile-pic-111_x_111.png" alt="conner profile">
+              </picture>
+
             <h2 class="mt-3">Conner <br>
                 Hyndman</h2>
             <p>Conner is an IMD Student at 
                 Algonquin College.
                 He is pursuing a career in 
                 web development.</p>
+                
             <img class="resume" src="images/resume-graphic.png" alt="cartoon resume">
             <button type="button" class="resume-btn">Download Resume</button>
         </div>
@@ -67,19 +83,34 @@
                         <i class="fa-solid fa-arrow-left" style="color: #ebab43;"></i>
                     </div>
                     <div class="col">
-                        <img class="hobby-img dog" src="images/dog-pic-161_x_208.png" alt="dog pic">
+                        <picture>
+                            <source srcset="images/dog-pic-184_x_268.png"
+                            media="(min-width: 1366px)">
+                
+                            <img class="hobby-img dog" src="images/dog-pic-161_x_208.png" alt="dog pic">
+                          </picture>
                     </div>
                     <div class="col">
-                        <img class="hobby-img goalie" src="images/goalie-pic-235_x_188.png" alt="ice hockey goalie">
+                        <picture>
+                            <source srcset="images/goalie-pic-292_x_216.png"
+                            media="(min-width: 1366px)">
+                
+                            <img class="hobby-img goalie" src="images/goalie-pic-235_x_188.png" alt="ice hockey goalie">
+                          </picture>
                     </div>
                     <div class="col">
-                        <img class="hobby-img game" src="images/hockey-game-149_x_198.png" alt="nhl game">
+                        <picture>
+                            <source srcset="images/hockey-game-184_x_268.png"
+                            media="(min-width: 1366px)">
+                
+                            <img class="hobby-img game" src="images/hockey-game-149_x_198.png" alt="nhl game">
+                          </picture>
                     </div>
                     <div class="col">
                         <i class="fa-solid fa-arrow-right" style="color: #ebab43;"></i>
                     </div>
                 </div>
-        <!-- Images still need responsive, and border
+        <!--
             I wanted to use bootstrap border for the images,
             but the width wasn't large enough. And I couldn't
             use boostrap width and increase it with css
