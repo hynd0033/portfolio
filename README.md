@@ -18,5 +18,6 @@ email and phone images are from the icons 4 design extension (adobe illustrator)
 social media, nav list and arrow images icon are from font awesome 
 fonts are from google fonts
 home page banner is a stock image that was manipulated in photoshop (https://www.pexels.com/photo/flat-screen-computer-monitor-3977908/)
+Public library is animate.css (https://animate.style/)
 
 
